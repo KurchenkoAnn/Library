@@ -8,16 +8,28 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition />
+            <RowDefinition Height="20"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
+        
+            <Menu>
+               <MenuItem Header=" Add " />
+            </Menu>
 
-        <ListView >
-            <StackPanel >
-                <Menu>
-                    <MenuItem Header="Add" Grid.Row="0"/>
-                </Menu>
-            </StackPanel>
-        </ListView >
+        <ListView Name="lv" Grid.Row="1" >
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel>
+                        <Image Grid.Row="1" HorizontalAlignment="Center" Source="{Binding Path= imgPath}" Height="250" Width="250"/>
+                        <TextBlock HorizontalAlignment="Center" FontSize="30" Text="{Binding Path= Name}"/>
+                        <TextBlock HorizontalAlignment="Center" FontSize="25" Text="{Binding Path=Author}"/>
+                        <TextBlock HorizontalAlignment="Center" FontSize="25" Text="{Binding Path=Year}"/>
+                        <TextBlock HorizontalAlignment="Center" FontSize="25" Text="{Binding Path=Genre}"/>
+                        <!--<ComboBox IsEnabled="False" HorizontalAlignment="Center" SelectedItem="{Binding Path=Genre}/>-->
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+
+        </ListView>
     </Grid>
 </Window>
