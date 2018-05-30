@@ -41,7 +41,8 @@ namespace Library
         {
             OpenFileDialog op = new OpenFileDialog();
             op.ShowDialog();
-            FileInfo f = new FileInfo(op.FileName);
+            //tb.Text = File.ReadAllText(op.FileName);
+
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)

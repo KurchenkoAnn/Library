@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Library
 {
-    public enum Genre { fantastic, horror, comedy, western, detective, drama, melodrama, action, historic, wars }
+    public enum Genre { fantastic, horror, comedy, western, detective, drama, melodrama, action, historic, wars, childrens }
     public class Book
     {
         public string Name { set; get; }
