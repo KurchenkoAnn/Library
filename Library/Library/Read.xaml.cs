@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,9 +20,15 @@ namespace Library
     /// </summary>
     public partial class Read : Window
     {
-        public Read()
+        public Read(string path)
         {
             InitializeComponent();
+            tb1.Text = File.ReadAllText(path);
+        }
+
+        private void tb1_Scroll(object sender, System.Windows.Controls.Primitives.ScrollEventArgs e)
+        {
+
         }
     }
 }

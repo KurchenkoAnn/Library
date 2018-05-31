@@ -24,6 +24,7 @@ namespace Library
         public Book b { get; set; }
         public AddBookView()
         {
+
             InitializeComponent();
             Combox.ItemsSource = Enum.GetNames(typeof(Genre));
 

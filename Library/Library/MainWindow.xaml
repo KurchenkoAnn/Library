@@ -16,7 +16,7 @@
                <MenuItem Header=" Add " Click="MenuItem_Click" />
             </Menu>
 
-        <ListView Name="lv" Grid.Row="1" SelectionChanged="lv_SelectionChanged" >
+        <ListView Name="lv" Grid.Row="1" SelectionChanged="lv_SelectionChanged" MouseDoubleClick="lv_MouseDoubleClick" >
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <StackPanel>
@@ -25,6 +25,8 @@
                         <TextBlock HorizontalAlignment="Center" FontSize="25" Text="{Binding Path=Author}"/>
                         <TextBlock HorizontalAlignment="Center" FontSize="25" Text="{Binding Path=Year}"/>
                         <TextBlock HorizontalAlignment="Center" FontSize="25" Text="{Binding Path=Genre}"/>
+                        
+                        
                         <!--<Button Content="Read" HorizontalAlignment="Center" />-->
                         <!--<ComboBox IsEnabled="False" HorizontalAlignment="Center" SelectedItem="{Binding Path=Genre}/>-->
                     </StackPanel>
