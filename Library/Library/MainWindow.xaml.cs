@@ -24,9 +24,9 @@ namespace Library
         public MainWindow()
         {
             InitializeComponent();
-            book.Add(new Book() { Name = "Eleanor Oliphant Is Completely Fine", Author = " Gail Honeyman", Year= 2018,Genre=Genre.drama,imgPath = @"C:\Users\User.STEP.001\Desktop\EO.png"});
-            book.Add(new Book() { Name = "The Hitchhiker's Guide to the Galaxy ", Author = "Douglas Adams", Year = 2001, Genre = Genre.fantastic, imgPath = @"C:\Users\User.STEP.001\Desktop\386162.jpg" });
-            book.Add(new Book() { Name = "Diary of Tracy Bicker", Author = "Jacqueline Wilson", Year = 2002, Genre = Genre.childrens, imgPath = @"C:\Users\User.STEP.001\Desktop\462684.jpg" });
+            book.Add(new Book() { Name = "Eleanor Oliphant Is Completely Fine", Author = " Gail Honeyman", Year= 2018,Genre=Genre.drama,imgPath = @"C:\Users\user.STEP.001\Desktop\51L1UOtekVL._SX341_BO1,204,203,200_.jpg" });
+            book.Add(new Book() { Name = "The Hitchhiker's Guide to the Galaxy ", Author = "Douglas Adams", Year = 2001, Genre = Genre.fantastic, imgPath = @"C:\Users\user.STEP.001\Desktop\Без названия.jpg" });
+            book.Add(new Book() { Name = "Diary of Tracy Bicker", Author = "Jacqueline Wilson", Year = 2002, Genre = Genre.childrens, imgPath = @"C:\Users\user.STEP.001\Desktop\462684.jpg" });
             lv.ItemsSource = book;
           
         }
@@ -38,7 +38,14 @@ namespace Library
 
         private void MenuItem_Click(object sender, RoutedEventArgs e)
         {
+            AddBookView abv = new AddBookView();
+            abv.ShowDialog();
+        }
 
+        private void lv_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            Read read = new Read();
+            read.ShowDialog();
         }
     }
 }

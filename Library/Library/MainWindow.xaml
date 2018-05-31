@@ -16,7 +16,7 @@
                <MenuItem Header=" Add " Click="MenuItem_Click" />
             </Menu>
 
-        <ListView Name="lv" Grid.Row="1" >
+        <ListView Name="lv" Grid.Row="1" SelectionChanged="lv_SelectionChanged" >
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <StackPanel>
