@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Windows.Forms;
 using System.IO;
+
 namespace Library
 {
    
@@ -42,13 +43,13 @@ namespace Library
         {
             OpenFileDialog op = new OpenFileDialog();
             op.ShowDialog();
-            //tb.Text = File.ReadAllText(op.FileName);
+           
 
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-
+           
         }
     }
 }

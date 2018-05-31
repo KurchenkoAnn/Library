@@ -25,10 +25,6 @@
                         <TextBlock HorizontalAlignment="Center" FontSize="25" Text="{Binding Path=Author}"/>
                         <TextBlock HorizontalAlignment="Center" FontSize="25" Text="{Binding Path=Year}"/>
                         <TextBlock HorizontalAlignment="Center" FontSize="25" Text="{Binding Path=Genre}"/>
-                        
-                        
-                        <!--<Button Content="Read" HorizontalAlignment="Center" />-->
-                        <!--<ComboBox IsEnabled="False" HorizontalAlignment="Center" SelectedItem="{Binding Path=Genre}/>-->
                     </StackPanel>
                 </DataTemplate>
             </ListView.ItemTemplate>
